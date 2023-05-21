@@ -1,6 +1,6 @@
 {
   "name": "d-lsmy",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "bin": {
     "lsmy": "./dist/index.js"
   },
@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "npm-cli"
+  ],
   "author": "Daiki Nakashima",
   "license": "ISC",
   "devDependencies": {
