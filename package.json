@@ -1,6 +1,6 @@
 {
   "name": "d-lsmy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "bin": {
     "lsmy": "./dist/index.js"
   },
@@ -8,7 +8,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc && npm link"
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "Daiki Nakashima",
