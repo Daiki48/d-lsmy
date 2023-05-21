@@ -1,0 +1,20 @@
+{
+  "name": "d-lsmy",
+  "version": "1.0.0",
+  "bin": {
+    "lsmy": "./dist/index.js"
+  },
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc && npm link"
+  },
+  "keywords": [],
+  "author": "Daiki Nakashima",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
