@@ -2,6 +2,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import { drawLine } from './components/drawLine';
 
 const args = process.argv.slice(2);
 const showAll = args.includes('-a');
@@ -45,15 +46,12 @@ fs.readdir(targetDir, (err, files) => {
     });
   });
 
-  const drawLine = (startSymbol: string, middleSymbol: string, endSymbol: string) => {
-    console.log(`${startSymbol}${'─'.repeat(columnWidths[0] + 2)}${middleSymbol}${'─'.repeat(columnWidths[1] + 2)}${middleSymbol}${'─'.repeat(columnWidths[2] + 2)}${middleSymbol}${'─'.repeat(columnWidths[3] + 2)}${endSymbol}`);
-  };
-
-  drawLine('┌', '┬', '┐');
+  
+  drawLine(columnWidths, '┌', '┬', '┐');
   
   data.forEach(row => {
     console.log(`│ ${row[0].padEnd(columnWidths[0])} │ ${row[1].padEnd(columnWidths[1])} │ ${row[2].padEnd(columnWidths[2])} │ ${row[3].padEnd(columnWidths[3])} │`);
   });
   
-  drawLine('└', '┴', '┘');
+  drawLine(columnWidths, '└', '┴', '┘');
 });
