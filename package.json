@@ -1,6 +1,6 @@
 {
   "name": "d-lsmy",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "bin": {
     "lsmy": "./dist/main.js"
   },
@@ -13,7 +13,18 @@
   "keywords": [
     "npm-cli"
   ],
-  "author": "Daiki Nakashima",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Daiki48/d-lsmy.git"
+  },
+  "homepage": "https://github.com/Daiki48/d-lsmy/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/Daiki48/d-lsmy/issues"
+  },
+  "author": {
+    "name": "Daiki Nakashima",
+    "email": "daiki48.engineer@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "ts-node": "^10.9.1",
